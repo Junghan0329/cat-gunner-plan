@@ -51,6 +51,7 @@ section.ch{padding:64px 0 8px}
 .pill.o{background:var(--mustard)} .pill.m{background:var(--mint);color:#fff;border-color:var(--ink)} .pill.r{background:var(--red);color:#fff}
 .tag-unv{font-size:12px;font-weight:700;background:var(--pink);border:2px solid var(--ink);border-radius:6px;padding:0 6px;margin-left:6px;white-space:nowrap}
 .grid{display:grid;gap:20px}
+.grid.stats{grid-template-columns:repeat(6,1fr)}
 .g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
 .note{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
 ul.short{list-style:none;margin-top:14px}
@@ -271,6 +272,7 @@ footer p{color:var(--ink2);margin-top:4px}
 
 /* 반응형 */
 @media (max-width:900px){
+  .grid.stats{grid-template-columns:repeat(3,1fr)}
   .road{grid-template-columns:repeat(4,1fr)}.rs:not(:last-child)::after{display:none}
   .grid.risks .risk{flex:0 0 calc((100% - 20px)/2)}
   .cover-grid{grid-template-columns:1fr}
@@ -398,7 +400,7 @@ footer p{color:var(--ink2);margin-top:4px}
 <section class="ch" id="game">
   <div class="ch-head"><div class="num">01</div><h2>게임 한눈에</h2></div>
   <p class="lead">귀엽고 쉬운 방치형 슈팅. 평점은 높다.</p>
-  <div class="grid g4 stats" style="grid-template-columns:repeat(6,1fr)">
+  <div class="grid g4 stats">
     <div class="card stat hl"><b>4.8</b><span>구글 평점</span></div>
     <div class="card stat"><b>100만+</b><span>구글 다운로드</span></div>
     <div class="card stat"><b>4위</b><span>구글 인기 캐주얼</span></div>
